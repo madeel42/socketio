@@ -14,6 +14,7 @@
     "redux": "^4.0.5",
     "socket.io-client": "^2.3.0"
   },
+  "proxy": "http://localhost:7000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

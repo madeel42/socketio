@@ -41,7 +41,8 @@ const Chatapp = (props) => {
     socket.emit("chat message", value);
   };
   if (socket === undefined) {
-    socket = io(":7000");
+    socket = io.connect('localhost:7000');
+    // socket = io(":7000");
     socket.on('chat message', function(msg){
       console.log(msg)
      store.dispatch({
